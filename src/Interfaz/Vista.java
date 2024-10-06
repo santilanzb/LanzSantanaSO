@@ -110,6 +110,25 @@ public class Vista extends javax.swing.JFrame {
         jLabel67 = new javax.swing.JLabel();
         jLabel68 = new javax.swing.JLabel();
         jLabel69 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
+        jTextField8 = new javax.swing.JTextField();
+        jTextField9 = new javax.swing.JTextField();
+        jTextField10 = new javax.swing.JTextField();
+        jTextField11 = new javax.swing.JTextField();
+        jTextField12 = new javax.swing.JTextField();
+        jTextField13 = new javax.swing.JTextField();
+        jTextField14 = new javax.swing.JTextField();
+        jTextField15 = new javax.swing.JTextField();
+        jTextField16 = new javax.swing.JTextField();
+        jTextField17 = new javax.swing.JTextField();
+        jTextField18 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
 
         jLabel43.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(255, 255, 255));
@@ -538,68 +557,111 @@ public class Vista extends javax.swing.JFrame {
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel38.setText("Simulación:");
-        jPanel3.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 39, -1, -1));
+        jLabel38.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
+        jLabel38.setText("Datos de la Simulación:");
+        jPanel3.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 39, 300, 40));
 
-        jLabel39.setText("jLabel39");
+        jLabel39.setText("Duración en segundos de un día en la simulación:");
         jPanel3.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, -1, -1));
 
-        jLabel51.setText("jLabel51");
+        jLabel51.setText("Cantidad de días entre las entregas de las computadoras:");
         jPanel3.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, -1, -1));
 
-        jLabel52.setText("jLabel52");
+        jLabel52.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel52.setText("Cantidad inicial de trabajadores:");
         jPanel3.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, -1, -1));
 
-        jLabel53.setText("jLabel53");
+        jLabel53.setText("Productores de placa base:");
         jPanel3.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, -1, -1));
 
+        jLabel54.setFont(new java.awt.Font("sansserif", 3, 24)); // NOI18N
         jLabel54.setText("MSI");
         jPanel3.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, -1));
 
-        jLabel55.setText("jLabel55");
+        jLabel55.setText("Productores de CPU:");
         jPanel3.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, -1, -1));
 
-        jLabel56.setText("jLabel56");
+        jLabel56.setText("Productores de Memoria RAM:");
         jPanel3.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, -1, -1));
 
+        jLabel57.setFont(new java.awt.Font("sansserif", 3, 24)); // NOI18N
         jLabel57.setText("APPLE");
-        jPanel3.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 280, -1, -1));
+        jPanel3.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 280, -1, -1));
 
-        jLabel58.setText("jLabel58");
-        jPanel3.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, -1, -1));
+        jLabel58.setText("Duración en segundos de un día en la simulación:");
+        jPanel3.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 120, -1, -1));
 
-        jLabel59.setText("jLabel59");
-        jPanel3.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 160, -1, -1));
+        jLabel59.setText("Cantidad de días entre las entregas de las computadoras:");
+        jPanel3.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 160, -1, -1));
 
-        jLabel60.setText("jLabel60");
-        jPanel3.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 200, -1, 20));
+        jLabel60.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel60.setText("Cantidad inicial de trabajadores:");
+        jPanel3.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 200, -1, 20));
 
-        jLabel61.setText("jLabel61");
-        jPanel3.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 240, -1, -1));
+        jLabel61.setText("Productores de placa base:");
+        jPanel3.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 240, -1, -1));
 
-        jLabel62.setText("jLabel62");
-        jPanel3.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 280, -1, -1));
+        jLabel62.setText("Productores de CPU:");
+        jPanel3.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 280, -1, -1));
 
-        jLabel63.setText("jLabel63");
-        jPanel3.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 320, -1, -1));
+        jLabel63.setText("Productores de Memoria RAM:");
+        jPanel3.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 320, -1, -1));
 
-        jLabel64.setText("jLabel64");
+        jLabel64.setText("Productores de Fuente de Alimentacion:");
         jPanel3.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, -1, -1));
 
-        jLabel65.setText("jLabel65");
-        jPanel3.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 360, -1, -1));
+        jLabel65.setText("Productores de Fuente de Alimentacion:");
+        jPanel3.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 360, -1, -1));
 
-        jLabel66.setText("jLabel66");
+        jLabel66.setText("Productores de Tarjetas Graficas: ");
         jPanel3.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 400, -1, -1));
 
-        jLabel67.setText("jLabel67");
+        jLabel67.setText("Ensambladores:");
         jPanel3.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 440, -1, -1));
 
-        jLabel68.setText("jLabel68");
-        jPanel3.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 400, -1, -1));
+        jLabel68.setText("Productores de Tarjetas Graficas:");
+        jPanel3.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 400, -1, -1));
 
-        jLabel69.setText("jLabel69");
-        jPanel3.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 440, -1, -1));
+        jLabel69.setText("Ensambladores:");
+        jPanel3.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 440, -1, -1));
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 110, 60, -1));
+        jPanel3.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 150, 60, -1));
+        jPanel3.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, 60, -1));
+        jPanel3.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, 60, -1));
+        jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, 60, -1));
+        jPanel3.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 60, -1));
+        jPanel3.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 350, 60, -1));
+        jPanel3.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 390, 60, -1));
+        jPanel3.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 430, 60, -1));
+        jPanel3.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 110, 60, -1));
+        jPanel3.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 190, 60, -1));
+
+        jTextField12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField12ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 150, 60, -1));
+        jPanel3.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 230, 60, -1));
+        jPanel3.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 270, 60, -1));
+        jPanel3.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 310, 60, -1));
+        jPanel3.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 350, 60, -1));
+        jPanel3.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 390, 60, -1));
+        jPanel3.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 430, 60, -1));
+
+        jButton1.setText("Guardar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 540, -1, -1));
 
         jTabbedPane1.addTab("Configuracion", jPanel3);
 
@@ -616,6 +678,18 @@ public class Vista extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField12ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -657,6 +731,7 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JLabel animationLabel3;
     private javax.swing.JLabel dubbingLabel2;
     private javax.swing.JLabel dubbingLabel3;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -731,6 +806,24 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextField13;
+    private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
+    private javax.swing.JTextField jTextField17;
+    private javax.swing.JTextField jTextField18;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
     private javax.swing.JLabel plotTwistDriveLabel2;
     private javax.swing.JLabel plotTwistDriveLabel3;
     private javax.swing.JLabel scriptLabel2;
