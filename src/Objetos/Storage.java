@@ -8,11 +8,11 @@ package Objetos;
  *
  * @author Abraham Santana
  */
-public class drive {
+public class Storage {
     private int resourse;
     private int maxResourse;
     
-    public drive(int maxResourse) {
+    public Storage(int maxResourse) {
         this.maxResourse = maxResourse;
         this.resourse = 0;
     }
@@ -37,7 +37,7 @@ public class drive {
         }else{
             int oldResourse = getResourse();
             setResourse(getResourse() - amount);
-            //System.out.println("Drive substracted from " + oldResourse + " to " + getResourse());
+            //System.out.println("Storage substracted from " + oldResourse + " to " + getResourse());
             return true;
             
         }

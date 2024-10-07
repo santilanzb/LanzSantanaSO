@@ -57,8 +57,8 @@ public class motherboardTeam extends Thread {
         
     }
 
-    public drive getMotherboardDrive() {
-        return company.getMotherboardDrive();
+    public Storage getMotherboardStorage() {
+        return company.getMotherboardStorage();
     }
 
     public void operate() {
@@ -67,11 +67,11 @@ public class motherboardTeam extends Thread {
             try {
 
                 getMotherboardSemaphore().acquire(); // wait
-                int addedAmount = getMotherboardDrive().add(getEmployeeCount()); // Adds 1 script for each employee in
+                int addedAmount = getMotherboardStorage().add(getEmployeeCount()); // Adds 1 script for each employee in
                                                                                   // the team the function .add() in
                                                                                   // drive class returns the added
                                                                                   // amount to be reported later
-                System.out.println("El drive de  Productores de placa base tiene " + getMotherboardDrive().getResourse() + " Placas Base");
+                System.out.println("El drive de  Productores de placa base tiene " + getMotherboardStorage().getResourse() + " Placas Base");
                 getMotherboardSemaphore().release(); // wait
                 setDayCicle(0);
 
