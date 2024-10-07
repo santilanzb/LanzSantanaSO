@@ -35,6 +35,7 @@ public class company extends Thread {
     private Semaphore motherboardSemaphore;
     private Semaphore ramSemaphore;
     private Semaphore powersupplySemaphore;
+    private Semaphore graphicscardSemaphore;
     private Semaphore daysLeftSemaphore;
     private Semaphore salaryAccountSemaphore;
 
@@ -42,24 +43,29 @@ public class company extends Thread {
     private Storage motherboardStorage;
     private Storage ramStorage;
     private Storage powersupplyStorage;
+    private Storage graphicscardStorage;
+    
  
     
     //Components requirements section
     private int motherboardReq;
     private int ramReq;
     private int powersupplyReq;
+    private int graphicscardReq;
     
     //Employee type count section
     private int motherboardEmployeeCount;
     private int ramEmployeeCount;
     private int powersupplyEmployeeCount;
+    private int graphicscardEmployeeCount;
     
     //Employee type team Objects
     private motherboardTeam motherboardTeam;
     private ramTeam ramTeam;
     private powersupplyTeam powersupplyTeam;
+    private graphicscardTeam graphicscardTeam;
    
-    public company(String companyName,int commonComputerProfit,int gcComputerProfit, int deadlineRatio, int dayDuration, int motherboardReq, int ramReq, int powersupplyReq, int motherboardEmployeeCount, int ramEmployeeCount, int powersupplyEmployeeCount) {
+    public company(String companyName,int commonComputerProfit,int gcComputerProfit, int deadlineRatio, int dayDuration, int motherboardReq, int ramReq, int powersupplyReq, int graphicscardReq, int motherboardEmployeeCount, int ramEmployeeCount, int powersupplyEmployeeCount, int graphicscardEmployeeCount) {
         //Id
         this.companyName = companyName;
         //Economics
@@ -79,6 +85,7 @@ public class company extends Thread {
         this.motherboardSemaphore = new Semaphore(1);
         this.ramSemaphore = new Semaphore(1);
         this.powersupplySemaphore = new Semaphore(1);
+        this.graphicscardSemaphore = new Semaphore(1);
         this.daysLeftSemaphore = new Semaphore(1); //This semaphore is going to be used to try to avoid concurrencies between the project manager and director changing days left
         this.salaryAccountSemaphore = new Semaphore(1);
         
@@ -86,21 +93,25 @@ public class company extends Thread {
         this.motherboardStorage = new Storage(25);
         this.ramStorage = new Storage(55);
         this.powersupplyStorage = new Storage(35);
+        this.graphicscardStorage = new Storage(10);
         
         //Requirements
         this.motherboardReq = motherboardReq;
         this.ramReq = ramReq;
         this.powersupplyReq = powersupplyReq;
+        this.graphicscardReq = graphicscardReq;
 
         //Employee counts
         this.motherboardEmployeeCount = motherboardEmployeeCount;
         this.ramEmployeeCount = ramEmployeeCount;
         this.powersupplyEmployeeCount = powersupplyEmployeeCount;
+        this.graphicscardEmployeeCount = graphicscardEmployeeCount;
      
         //Teams
         this.motherboardTeam = new motherboardTeam(this);
         this.ramTeam = new ramTeam(this);
         this.powersupplyTeam = new powersupplyTeam(this);
+        this.graphicscardTeam = new graphicscardTeam(this);
 
     }
     @Override
@@ -108,6 +119,7 @@ public class company extends Thread {
                     getMotherboardTeam().start();
                     getRamTeam().start();
                     getPowersupplyTeam().start();
+                    getGraphicscardTeam().start();
     }
     
     public String getCompanyName() {
@@ -181,6 +193,10 @@ public class company extends Thread {
         return powersupplySemaphore;
     }
     
+    public Semaphore getGraphicscardSemaphore(){
+        return graphicscardSemaphore;
+    }
+    
     public Storage getMotherboardStorage() {
         return motherboardStorage;
     }
@@ -193,6 +209,10 @@ public class company extends Thread {
         return powersupplyStorage;
     }
     
+    public Storage getGraphicscardStorage(){
+        return graphicscardStorage;
+    }
+    
     public int getMotherboardReq() {
         return motherboardReq;
     }
@@ -203,6 +223,10 @@ public class company extends Thread {
 
     public int getPowersupplyReq(){
         return powersupplyReq;
+    }
+    
+    public int getGraphicscardReq(){
+        return graphicscardReq;
     }
    
 
@@ -217,6 +241,10 @@ public class company extends Thread {
     public int getPowersupplyEmployeeCount(){
         return powersupplyEmployeeCount;
     }
+    
+    public int getGraphicscardEmployeeCount(){
+        return graphicscardEmployeeCount;
+    }
 
     public void setMotherboardEmployeeCount(int motherboardEmployeeCount) {
         this.motherboardEmployeeCount = motherboardEmployeeCount;
@@ -226,8 +254,12 @@ public class company extends Thread {
         this.ramEmployeeCount = ramEmployeeCount;
     }
     
-    public void serPowersupplyEmployeeCount(int powersupplyEmployeeCount){
+    public void setPowersupplyEmployeeCount(int powersupplyEmployeeCount){
         this.powersupplyEmployeeCount = powersupplyEmployeeCount;
+    }
+    
+    public void setGraphicscardEmployeeCount(int graphicscardEmployeeCount){
+        this.graphicscardEmployeeCount = graphicscardEmployeeCount;
     }
 
     public int getDayDuration() {
@@ -248,6 +280,10 @@ public class company extends Thread {
     
     public powersupplyTeam getPowersupplyTeam(){
         return powersupplyTeam;
+    }
+    
+    public graphicscardTeam getGraphicscardTeam(){
+        return graphicscardTeam;
     }
 
     public int getComputersReleased() {
