@@ -33,23 +33,28 @@ public class company extends Thread {
     
     //Semaphore section
     private Semaphore motherboardSemaphore;
+    private Semaphore ramSemaphore;
     private Semaphore daysLeftSemaphore;
     private Semaphore salaryAccountSemaphore;
 
     //Storage section
     private Storage motherboardStorage;
+    private Storage ramStorage;
  
     
     //Components requirements section
     private int motherboardReq;
+    private int ramReq;
     
     //Employee type count section
     private int motherboardEmployeeCount;
+    private int ramEmployeeCount;
     
     //Employee type team Objects
     private motherboardTeam motherboardTeam;
+    private ramTeam ramTeam;
    
-    public company(String companyName,int commonComputerProfit,int gcComputerProfit, int deadlineRatio, int dayDuration, int motherboardReq, int motherboardEmployeeCount) {
+    public company(String companyName,int commonComputerProfit,int gcComputerProfit, int deadlineRatio, int dayDuration, int motherboardReq,int ramReq, int motherboardEmployeeCount, int ramEmployeeCount) {
         //Id
         this.companyName = companyName;
         //Economics
@@ -67,25 +72,31 @@ public class company extends Thread {
         this.dayDuration = dayDuration;
         //Semaphores
         this.motherboardSemaphore = new Semaphore(1);
+        this.ramSemaphore = new Semaphore(1);
         this.daysLeftSemaphore = new Semaphore(1); //This semaphore is going to be used to try to avoid concurrencies between the project manager and director changing days left
         this.salaryAccountSemaphore = new Semaphore(1);
         
         //Drives
         this.motherboardStorage = new Storage(25);
+        this.ramStorage = new Storage(55);
         
         //Requirements
         this.motherboardReq = motherboardReq;
+        this.ramReq = ramReq;
 
         //Employee counts
         this.motherboardEmployeeCount = motherboardEmployeeCount;
+        this.ramEmployeeCount = ramEmployeeCount;
      
         //Teams
         this.motherboardTeam = new motherboardTeam(this);
+        this.ramTeam = new ramTeam(this);
 
     }
     @Override
     public void run() {                                         
                     getMotherboardTeam().start();
+                    getRamTeam().start();
     }
     
     public String getCompanyName() {
@@ -151,14 +162,24 @@ public class company extends Thread {
         return motherboardSemaphore;
     }
 
+    public Semaphore getRamSemaphore(){
+        return ramSemaphore;
+    }
     
     public Storage getMotherboardStorage() {
         return motherboardStorage;
     }
-
-
+    
+    public Storage getRamStorage(){
+        return ramStorage;
+    }
+    
     public int getMotherboardReq() {
         return motherboardReq;
+    }
+    
+    public int getRamReq(){
+        return ramReq;
     }
 
    
@@ -166,11 +187,18 @@ public class company extends Thread {
     public int getMotherboardEmployeeCount() {
         return motherboardEmployeeCount;
     }
+    
+    public int getRamEmployeeCount(){
+        return ramEmployeeCount;
+    }
 
     public void setMotherboardEmployeeCount(int motherboardEmployeeCount) {
         this.motherboardEmployeeCount = motherboardEmployeeCount;
     }
 
+    public void setRamEmployeeCount(int ramEmployeeCount){
+        this.ramEmployeeCount = ramEmployeeCount;
+    }
     
 
     public int getDayDuration() {
@@ -183,6 +211,10 @@ public class company extends Thread {
 
     public motherboardTeam getMotherboardTeam() {
         return motherboardTeam;
+    }
+    
+    public ramTeam getRamTeam(){
+        return ramTeam;
     }
 
     public int getComputersReleased() {
