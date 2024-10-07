@@ -15,6 +15,7 @@ public class Vista extends javax.swing.JFrame {
      */
     public Vista() {
         initComponents();
+        this.setVisible(true);
     }
 
     /**
@@ -555,6 +556,7 @@ public class Vista extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Apple", jPanel1);
 
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel38.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N

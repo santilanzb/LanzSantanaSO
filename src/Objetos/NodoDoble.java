@@ -8,7 +8,7 @@ public class NodoDoble {
     private NodoDoble next, previous;
     private Object element;
 
-    public NodoDoble(Datos element) {
+    public NodoDoble(Data element) {
         this.next = this.previous = null;
         this.element = element;
     }
@@ -29,8 +29,8 @@ public class NodoDoble {
         this.previous = previous;
     }
 
-    public Datos getElement() {
-        return (Datos) element;
+    public Data getElement() {
+        return (Data) element;
     }
 
     public void setElement(Object element) {

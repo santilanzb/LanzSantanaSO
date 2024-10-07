@@ -8,6 +8,6 @@ package Objetos;
  *
  * @author santi
  */
-public class Datos {
+public class Data {
     
 }
