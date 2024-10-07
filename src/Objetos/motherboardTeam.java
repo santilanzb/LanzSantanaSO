@@ -97,7 +97,7 @@ public class motherboardTeam extends Thread {
                 Logger.getLogger(motherboardTeam.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-
+//
     }
 
     public Semaphore getMotherboardSemaphore() {
