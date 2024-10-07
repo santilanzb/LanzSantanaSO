@@ -8,11 +8,11 @@ package Objetos;
  *
  * @author Abraham Santana
  */
-public class Drive {
+public class drive {
     private int resourse;
     private int maxResourse;
     
-    public Drive(int maxResourse) {
+    public drive(int maxResourse) {
         this.maxResourse = maxResourse;
         this.resourse = 0;
     }

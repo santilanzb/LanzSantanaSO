@@ -13,22 +13,22 @@ import java.util.logging.Logger;
  *
  * @author Abraham Santana
  */
-public class MotherboardProducersTeam extends Thread {
+public class motherboardTeam extends Thread {
 
-    Company company;
+    company company;
     int salary = 20;
     private int dayCicle;
 
-    public MotherboardProducersTeam(Company company) {
+    public motherboardTeam(company company) {
         this.company = company;
     }
 
     public int getEmployeeCount() {
-        return company.getMotherboardProducersEmployeeCount();
+        return company.getMotherboardEmployeeCount();
     }
 
     public void setEmployeeCount(int employeeCount) {
-        company.setMotherboardProducersEmployeeCount(employeeCount);
+        company.setMotherboardEmployeeCount(employeeCount);
     }
 
     public int getDayDuration() {
@@ -57,8 +57,8 @@ public class MotherboardProducersTeam extends Thread {
         
     }
 
-    public Drive getMotherboardProducersDrive() {
-        return company.getMotherboardProducersDrive();
+    public drive getMotherboardDrive() {
+        return company.getMotherboardDrive();
     }
 
     public void operate() {
@@ -66,17 +66,17 @@ public class MotherboardProducersTeam extends Thread {
         if (getDayCicle() >= 4) {
             try {
 
-                getMotherboardProducersSemaphore().acquire(); // wait
-                int addedAmount = getMotherboardProducersDrive().add(getEmployeeCount()); // Adds 1 script for each employee in
+                getMotherboardSemaphore().acquire(); // wait
+                int addedAmount = getMotherboardDrive().add(getEmployeeCount()); // Adds 1 script for each employee in
                                                                                   // the team the function .add() in
                                                                                   // drive class returns the added
                                                                                   // amount to be reported later
-                System.out.println("El drive de  Productores de placa base tiene " + getMotherboardProducersDrive().getResourse() + " Placas Base");
-                getMotherboardProducersSemaphore().release(); // wait
+                System.out.println("El drive de  Productores de placa base tiene " + getMotherboardDrive().getResourse() + " Placas Base");
+                getMotherboardSemaphore().release(); // wait
                 setDayCicle(0);
 
             } catch (InterruptedException ex) {
-                Logger.getLogger(MotherboardProducersTeam.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(motherboardTeam.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
@@ -94,13 +94,13 @@ public class MotherboardProducersTeam extends Thread {
                 company.setDaysGoneBy(company.getDaysGoneBy() + 1);
 
             } catch (InterruptedException ex) {
-                Logger.getLogger(MotherboardProducersTeam.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(motherboardTeam.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
 
     }
 
-    public Semaphore getMotherboardProducersSemaphore() {
-        return company.getMotherboardProducersSemaphore();
+    public Semaphore getMotherboardSemaphore() {
+        return company.getMotherboardSemaphore();
     }
 }
