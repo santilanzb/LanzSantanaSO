@@ -54,7 +54,7 @@ public class cpuTeam extends Thread{
                 getSalaryAccount() + salary * 24 * getEmployeeCount());
     }
 
-    public storage getCpuStorage() {
+    public Storage getCpuStorage() {
         return company.getCpuStorage();
     }
 
