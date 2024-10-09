@@ -68,6 +68,7 @@ public class company extends Thread {
     private powersupplyTeam powersupplyTeam;
     private graphicscardTeam graphicscardTeam;
     private cpuTeam cpuTeam;
+    private director director;
    
     public company(String companyName,int commonComputerProfit,int gcComputerProfit, int deadlineRatio, int dayDuration, int motherboardReq, int ramReq, int powersupplyReq, int graphicscardReq, int cpuReq, int motherboardEmployeeCount, int ramEmployeeCount, int powersupplyEmployeeCount, int graphicscardEmployeeCount, int cpuEmployeeCount) {
         //Id
@@ -121,6 +122,7 @@ public class company extends Thread {
         this.powersupplyTeam = new powersupplyTeam(this);
         this.graphicscardTeam = new graphicscardTeam(this);
         this.cpuTeam = new cpuTeam(this);
+        this.director = new director(this);
 
     }
     @Override
@@ -130,6 +132,7 @@ public class company extends Thread {
                     getPowersupplyTeam().start();
                     getGraphicscardTeam().start();
                     getCpuTeam().start();
+                    getDirector().start();
     }
     
     public String getCompanyName() {
@@ -343,6 +346,11 @@ public class company extends Thread {
     public int getGcComputerProfit() {
         return gcComputerProfit;
     }
+    
+    public director getDirector() {
+        return director;
+    }
+
 
     public Semaphore getDaysLeftSemaphore() {
         return daysLeftSemaphore;
