@@ -68,7 +68,7 @@ public class graphicscardTeam extends Thread {
                 getGraphicscardSemaphore().acquire(); // wait
                 int addedAmount = getGraphicscardStorage().add(getEmployeeCount()); // Adds 1 script for each employee in
                                                                                  // the team the function .add() in
-                                                                                 // drive class returns the added amount
+                                                                                 // storage class returns the added amount
                                                                                  // to be reported later
                 System.out
                         .println("El almacen de tarjetas graficas tiene " + getGraphicscardStorage().getResourse() + " tarjetas graficas");

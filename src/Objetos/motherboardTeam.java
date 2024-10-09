@@ -69,7 +69,7 @@ public class motherboardTeam extends Thread {
                 getMotherboardSemaphore().acquire(); // wait
                 int addedAmount = getMotherboardStorage().add(getEmployeeCount()); // Adds 1 script for each employee in
                                                                                   // the team the function .add() in
-                                                                                  // drive class returns the added
+                                                                                  // storage class returns the added
                                                                                   // amount to be reported later
                 System.out.println("El drive de  Productores de placa base tiene " + getMotherboardStorage().getResourse() + " Placas Base");
                 getMotherboardSemaphore().release(); // wait

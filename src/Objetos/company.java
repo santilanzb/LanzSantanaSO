@@ -37,6 +37,7 @@ public class company extends Thread {
     private Semaphore powersupplySemaphore;
     private Semaphore graphicscardSemaphore;
     private Semaphore cpuSemaphore;
+    private Semaphore assemblerSemaphore;
     private Semaphore daysLeftSemaphore;
     private Semaphore salaryAccountSemaphore;
 
@@ -46,6 +47,8 @@ public class company extends Thread {
     private Storage powersupplyStorage;
     private Storage graphicscardStorage;
     private Storage cpuStorage;
+    private storageAssembler assemblerStorage;
+    private storageAssembler gcAssemblerStorage;
  
     
     //Components requirements section
@@ -54,6 +57,8 @@ public class company extends Thread {
     private int powersupplyReq;
     private int graphicscardReq;
     private int cpuReq;
+    private int gcComputersRatio;
+    private int graphicscardAmount;
     
     //Employee type count section
     private int motherboardEmployeeCount;
@@ -61,6 +66,7 @@ public class company extends Thread {
     private int powersupplyEmployeeCount;
     private int graphicscardEmployeeCount;
     private int cpuEmployeeCount;
+    private int assemblerEmployeeCount;
     
     //Employee type team Objects
     private motherboardTeam motherboardTeam;
@@ -70,8 +76,9 @@ public class company extends Thread {
     private cpuTeam cpuTeam;
     private director director;
     private proyectManager proyectManager;
+    private assemblerTeam assemblerTeam;
    
-    public company(String companyName,int commonComputerProfit,int gcComputerProfit, int deadlineRatio, int dayDuration, int motherboardReq, int ramReq, int powersupplyReq, int graphicscardReq, int cpuReq, int motherboardEmployeeCount, int ramEmployeeCount, int powersupplyEmployeeCount, int graphicscardEmployeeCount, int cpuEmployeeCount) {
+    public company(String companyName,int commonComputerProfit,int gcComputerProfit, int deadlineRatio, int dayDuration, int motherboardReq, int ramReq, int powersupplyReq, int graphicscardReq, int cpuReq, int gcComputersRatio, int graphicscardAmount, int motherboardEmployeeCount, int ramEmployeeCount, int powersupplyEmployeeCount, int graphicscardEmployeeCount, int cpuEmployeeCount, int assemblerEmployeeCount) {
         //Id
         this.companyName = companyName;
         //Economics
@@ -93,6 +100,7 @@ public class company extends Thread {
         this.powersupplySemaphore = new Semaphore(1);
         this.graphicscardSemaphore = new Semaphore(1);
         this.cpuSemaphore = new Semaphore(1);
+        this.assemblerSemaphore = new Semaphore(1);
         this.daysLeftSemaphore = new Semaphore(1); //This semaphore is going to be used to try to avoid concurrencies between the project manager and director changing days left
         this.salaryAccountSemaphore = new Semaphore(1);
         
@@ -102,6 +110,8 @@ public class company extends Thread {
         this.powersupplyStorage = new Storage(35);
         this.graphicscardStorage = new Storage(10);
         this.cpuStorage = new Storage(20);
+        this.assemblerStorage = new storageAssembler(69);
+        this.gcAssemblerStorage = new storageAssembler(69);
         
         //Requirements
         this.motherboardReq = motherboardReq;
@@ -109,6 +119,8 @@ public class company extends Thread {
         this.powersupplyReq = powersupplyReq;
         this.graphicscardReq = graphicscardReq;
         this.cpuReq = cpuReq;
+        this.gcComputersRatio = gcComputersRatio;
+        this.graphicscardAmount = graphicscardAmount;
 
         //Employee counts
         this.motherboardEmployeeCount = motherboardEmployeeCount;
@@ -116,6 +128,7 @@ public class company extends Thread {
         this.powersupplyEmployeeCount = powersupplyEmployeeCount;
         this.graphicscardEmployeeCount = graphicscardEmployeeCount;
         this.cpuEmployeeCount = cpuEmployeeCount;
+        this.assemblerEmployeeCount = assemblerEmployeeCount;
      
         //Teams
         this.motherboardTeam = new motherboardTeam(this);
@@ -125,6 +138,7 @@ public class company extends Thread {
         this.cpuTeam = new cpuTeam(this);
         this.director = new director(this);
         this.proyectManager = new proyectManager(this);
+        this.assemblerTeam = new assemblerTeam(this);
 
     }
     @Override
@@ -134,6 +148,7 @@ public class company extends Thread {
                     getPowersupplyTeam().start();
                     getGraphicscardTeam().start();
                     getCpuTeam().start();
+                    getAssemblerTeam().start();
                     getDirector().start();
                     getProyectManager().start();
     }
@@ -217,6 +232,10 @@ public class company extends Thread {
         return cpuSemaphore;
     }
     
+    public Semaphore getAssemblerSemaphore() {
+        return assemblerSemaphore;
+    }
+    
     public Storage getMotherboardStorage() {
         return motherboardStorage;
     }
@@ -235,6 +254,14 @@ public class company extends Thread {
     
     public Storage getCpuStorage(){
         return cpuStorage;
+    }
+    
+    public storageAssembler getAssemblerStorage() {
+        return assemblerStorage;
+    }
+
+    public storageAssembler getGcAssemblerStorage() {
+        return gcAssemblerStorage;
     }
     
     public int getMotherboardReq() {
@@ -257,7 +284,14 @@ public class company extends Thread {
         return cpuReq;
     }
    
+    public int getGcComputersRatio() {
+        return gcComputersRatio;
+    }
 
+    public int getGraphicscardAmount() {
+        return graphicscardAmount;
+    }
+    
     public int getMotherboardEmployeeCount() {
         return motherboardEmployeeCount;
     }
@@ -276,6 +310,10 @@ public class company extends Thread {
     
     public int getCpuEmployeeCount(){
         return cpuEmployeeCount;
+    }
+    
+    public int getAssemblerEmployeeCount() {
+        return assemblerEmployeeCount;
     }
 
     public void setMotherboardEmployeeCount(int motherboardEmployeeCount) {
@@ -296,6 +334,10 @@ public class company extends Thread {
     
     public void setCpuEmployeeCount(int cpuEmployeeCount){
         this.cpuEmployeeCount = cpuEmployeeCount;
+    }
+
+    public void setAssemblerEmployeeCount(int assemblerEmployeeCount) {
+        this.assemblerEmployeeCount = assemblerEmployeeCount;
     }
 
     public int getDayDuration() {
@@ -324,6 +366,14 @@ public class company extends Thread {
     
     public cpuTeam getCpuTeam(){
         return cpuTeam;
+    }
+    
+    public assemblerTeam getAssemblerTeam() {
+        return assemblerTeam;
+    }
+    
+    public void setAssemblerTeam(assemblerTeam assemblerTeam) {
+        this.assemblerTeam = assemblerTeam;
     }
 
     public int getComputersReleased() {

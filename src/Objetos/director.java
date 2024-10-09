@@ -41,18 +41,18 @@ public class director extends Thread {
                 sleep(company.getDayDuration()); 
 
                 company.getAssemblerSemaphore().acquire(); 
-                int releasedCommonEpisodes = company.getAssemblerDrive().getResourse(); 
-                company.getAssemblerDrive().setResourse(0); 
-                int releasedPlotTwistEpisodes = company.getPlotAssemblerDrive().getResourse(); 
+                int releasedCommonComputers = company.getAssemblerStorage().getResourse(); 
+                company.getAssemblerStorage().setResourse(0); 
+                int releasedGcComputers = company.getGcAssemblerStorage().getResourse(); 
                 
-                company.getPlotAssemblerDrive().setResourse(0); 
-                company.setEpisodesReleased(company.getEpisodesReleased() + releasedCommonEpisodes);
-                company.setPlotEpisodesReleased(company.getPlotEpisodesReleased() + releasedPlotTwistEpisodes);
-                int profitsToSum = releasedCommonEpisodes * company.getCommonEpisodeProfit()
-                        + releasedPlotTwistEpisodes * company.getPlotEpisodeProfit(); 
+                company.getGcAssemblerStorage().setResourse(0); 
+                company.setComputersReleased(company.getComputersReleased() + releasedCommonComputers);
+                company.setGcComputersReleased(company.getGcComputersReleased() + releasedGcComputers);
+                int profitsToSum = releasedCommonComputers * company.getCommonComputerProfit()
+                        + releasedGcComputers * company.getGcComputerProfit(); 
                 
-                System.out.println("El director ha liberado " + releasedCommonEpisodes + " computadoras comunes y "
-                        + releasedPlotTwistEpisodes + " computadoras con tarjeta grafica");
+                System.out.println("El director ha liberado " + releasedCommonComputers + " computadoras comunes y "
+                        + releasedGcComputers + " computadoras con tarjeta grafica");
                 System.out.println("Las ganancias totales de este ciclo, han sido " + profitsToSum + "$");
                 company.setProfits(company.getProfits() + profitsToSum);
                 company.getDaysLeftSemaphore().acquire();
@@ -79,7 +79,7 @@ public class director extends Thread {
                     setCheckingPM(false);
 
                     // PRUEBAAAA
-                    if (company == main.CartoonNetwork) {
+                    if (company == main.Msi) {
                         main.gui.getDirectorStatus().setText("Administrando");
                     } else {
                         main.gui.getDirectorStatusStar().setText("Administrando");
@@ -97,7 +97,7 @@ public class director extends Thread {
                 setCheckingPM(true);
 
                 // PRUEBAAAA
-                if (company == main.CartoonNetwork) {
+                if (company == main.Msi) {
                     main.gui.getDirectorStatus().setText("Supervisando PM");
                 } else {
                     main.gui.getDirectorStatusStar().setText("Supervisando PM");
@@ -126,7 +126,7 @@ public class director extends Thread {
                     setCheckingPM(false);
 
                     // PRUEBAAAA
-                    if (company == main.CartoonNetwork) {
+                    if (company == main.Msi) {
                         main.gui.getDirectorStatus().setText("Administrando");
                     } else {
                         main.gui.getDirectorStatusStar().setText("Administrando");
