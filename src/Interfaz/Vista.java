@@ -119,6 +119,53 @@ public class Vista extends javax.swing.JFrame {
         graphicscard1 = new javax.swing.JTextField();
         assemblers1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        directorStatus = new javax.swing.JLabel();
+        projectManagerStatus1 = new javax.swing.JLabel();
+        projectManagerDeduction = new javax.swing.JLabel();
+        deadlineCounter = new javax.swing.JLabel();
+        readyPlotTwist1 = new javax.swing.JLabel();
+        readyStandard = new javax.swing.JLabel();
+        dubbingAvailabilityC = new javax.swing.JLabel();
+        projectManagerFaults = new javax.swing.JLabel();
+        scriptAvailabilityC = new javax.swing.JLabel();
+        projectManagerFaults4 = new javax.swing.JLabel();
+        stageAvailabilityC = new javax.swing.JLabel();
+        plotTwistAvailabilityC = new javax.swing.JLabel();
+        animationAvailabilityC = new javax.swing.JLabel();
+        revenueC = new javax.swing.JLabel();
+        costsC = new javax.swing.JLabel();
+        netIncomeC = new javax.swing.JLabel();
+        projectManagerFaults11 = new javax.swing.JLabel();
+        projectManagerFaults12 = new javax.swing.JLabel();
+        projectManagerFaults13 = new javax.swing.JLabel();
+        projectManagerFaults14 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel20 = new javax.swing.JLabel();
         scriptLabel2 = new javax.swing.JLabel();
@@ -158,40 +205,14 @@ public class Vista extends javax.swing.JFrame {
         deadlineCounterStar = new javax.swing.JLabel();
         readyPlotTwistStar = new javax.swing.JLabel();
         readyStandardStar = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
-        directorStatus = new javax.swing.JLabel();
-        projectManagerStatus1 = new javax.swing.JLabel();
-        projectManagerFaults = new javax.swing.JLabel();
-        projectManagerDeduction = new javax.swing.JLabel();
-        deadlineCounter = new javax.swing.JLabel();
-        readyPlotTwist1 = new javax.swing.JLabel();
-        readyStandard = new javax.swing.JLabel();
+        animationAvailability = new javax.swing.JLabel();
+        stageAvailability = new javax.swing.JLabel();
+        scriptAvailability = new javax.swing.JLabel();
+        plotTwistAvailability = new javax.swing.JLabel();
+        dubbingAvailability = new javax.swing.JLabel();
+        netIncome = new javax.swing.JLabel();
+        revenue = new javax.swing.JLabel();
+        costs = new javax.swing.JLabel();
 
         jLabel43.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(255, 255, 255));
@@ -346,6 +367,275 @@ public class Vista extends javax.swing.JFrame {
         jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 540, -1, -1));
 
         jTabbedPane1.addTab("Configuracion", jPanel3);
+
+        jPanel1.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/apple-logo_1.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
+
+        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel3.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel3.setText("#Faltas:");
+        jLabel3.setMaximumSize(new java.awt.Dimension(86, 36));
+        jLabel3.setMinimumSize(new java.awt.Dimension(86, 36));
+        jLabel3.setPreferredSize(new java.awt.Dimension(86, 36));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 60, 140, 40));
+
+        jLabel4.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel4.setText("Dinero Descontado:");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 60, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel5.setText("Datos Financieros");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel6.setText("Ganancias en bruto:");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel7.setText("Costos Operativos:");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel8.setText("Utilidades:");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel9.setText("Estado de actividad:");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, -1, -1));
+
+        jLabel10.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel10.setText("Project Manager:");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, -1, -1));
+
+        jLabel11.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel11.setText("Director:");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel12.setText("Placas base:");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 390, -1, -1));
+
+        jLabel16.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel16.setText("CPU:");
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 430, -1, -1));
+
+        jLabel17.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel17.setText("Memoria RAM:");
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 470, -1, -1));
+
+        jLabel18.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel18.setText("Disponibilidad actual en el almacen");
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 340, -1, -1));
+
+        jLabel19.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel19.setText("Fuentes de alimentacion:");
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 390, -1, -1));
+
+        jLabel22.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel22.setText("Tarjetas Graficas:");
+        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 450, -1, -1));
+
+        jLabel23.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel23.setText("Computadores Listos");
+        jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 520, -1, -1));
+
+        jLabel24.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel24.setText("Tarjeta Grafica:");
+        jPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 580, -1, -1));
+
+        jLabel25.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel25.setText("Dias restantes para la entrega:");
+        jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 620, -1, -1));
+
+        jLabel31.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel31.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel31.setText("Estandar:");
+        jPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 580, -1, -1));
+
+        jLabel32.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel32.setText("Placas Base:");
+        jPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 560, -1, -1));
+
+        jLabel33.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel33.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel33.setText("CPU:");
+        jPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 600, -1, -1));
+
+        jLabel34.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel34.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel34.setText("Memoria RAM:");
+        jPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 630, -1, -1));
+
+        jLabel35.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel35.setText("Disponibilidad maxima en el almacen");
+        jPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 510, -1, -1));
+
+        jLabel36.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel36.setText("Fuentes de alimentacion:");
+        jPanel1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 550, -1, -1));
+
+        jLabel37.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jLabel37.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel37.setText("Tarjetas Graficas:");
+        jPanel1.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 590, -1, -1));
+
+        directorStatus.setBackground(new java.awt.Color(0, 0, 0));
+        directorStatus.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        directorStatus.setForeground(new java.awt.Color(0, 0, 0));
+        directorStatus.setText("Trabajando");
+        jPanel1.add(directorStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 490, -1, -1));
+
+        projectManagerStatus1.setBackground(new java.awt.Color(0, 0, 0));
+        projectManagerStatus1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        projectManagerStatus1.setForeground(new java.awt.Color(0, 0, 0));
+        projectManagerStatus1.setText("Trabajando");
+        jPanel1.add(projectManagerStatus1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 460, -1, -1));
+
+        projectManagerDeduction.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        projectManagerDeduction.setForeground(new java.awt.Color(0, 0, 0));
+        projectManagerDeduction.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        projectManagerDeduction.setText("0");
+        jPanel1.add(projectManagerDeduction, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 70, 210, -1));
+
+        deadlineCounter.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        deadlineCounter.setForeground(new java.awt.Color(0, 0, 0));
+        deadlineCounter.setText("0");
+        jPanel1.add(deadlineCounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 620, -1, -1));
+
+        readyPlotTwist1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        readyPlotTwist1.setForeground(new java.awt.Color(0, 0, 0));
+        readyPlotTwist1.setText("0");
+        jPanel1.add(readyPlotTwist1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 580, -1, -1));
+
+        readyStandard.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        readyStandard.setForeground(new java.awt.Color(0, 0, 0));
+        readyStandard.setText("0");
+        jPanel1.add(readyStandard, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 580, -1, -1));
+
+        dubbingAvailabilityC.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        dubbingAvailabilityC.setForeground(new java.awt.Color(0, 0, 0));
+        dubbingAvailabilityC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        dubbingAvailabilityC.setText("0");
+        dubbingAvailabilityC.setToolTipText("");
+        jPanel1.add(dubbingAvailabilityC, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 390, 20, -1));
+
+        projectManagerFaults.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        projectManagerFaults.setForeground(new java.awt.Color(0, 0, 0));
+        projectManagerFaults.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        projectManagerFaults.setText("0");
+        projectManagerFaults.setToolTipText("");
+        jPanel1.add(projectManagerFaults, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 70, 90, -1));
+
+        scriptAvailabilityC.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        scriptAvailabilityC.setForeground(new java.awt.Color(0, 0, 0));
+        scriptAvailabilityC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        scriptAvailabilityC.setText("0");
+        scriptAvailabilityC.setToolTipText("");
+        jPanel1.add(scriptAvailabilityC, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 390, 20, -1));
+
+        projectManagerFaults4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        projectManagerFaults4.setForeground(new java.awt.Color(0, 0, 0));
+        projectManagerFaults4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        projectManagerFaults4.setText("0");
+        projectManagerFaults4.setToolTipText("");
+        jPanel1.add(projectManagerFaults4, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 550, 20, -1));
+
+        stageAvailabilityC.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        stageAvailabilityC.setForeground(new java.awt.Color(0, 0, 0));
+        stageAvailabilityC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        stageAvailabilityC.setText("0");
+        stageAvailabilityC.setToolTipText("");
+        jPanel1.add(stageAvailabilityC, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 470, 20, -1));
+
+        plotTwistAvailabilityC.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        plotTwistAvailabilityC.setForeground(new java.awt.Color(0, 0, 0));
+        plotTwistAvailabilityC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        plotTwistAvailabilityC.setText("0");
+        plotTwistAvailabilityC.setToolTipText("");
+        jPanel1.add(plotTwistAvailabilityC, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 450, 20, -1));
+
+        animationAvailabilityC.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        animationAvailabilityC.setForeground(new java.awt.Color(0, 0, 0));
+        animationAvailabilityC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        animationAvailabilityC.setText("0");
+        animationAvailabilityC.setToolTipText("");
+        jPanel1.add(animationAvailabilityC, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 430, 20, -1));
+
+        revenueC.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        revenueC.setForeground(new java.awt.Color(0, 0, 0));
+        revenueC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        revenueC.setText("0");
+        revenueC.setToolTipText("");
+        jPanel1.add(revenueC, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 20, -1));
+
+        costsC.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        costsC.setForeground(new java.awt.Color(0, 0, 0));
+        costsC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        costsC.setText("0");
+        costsC.setToolTipText("");
+        jPanel1.add(costsC, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 320, 20, -1));
+
+        netIncomeC.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        netIncomeC.setForeground(new java.awt.Color(0, 0, 0));
+        netIncomeC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        netIncomeC.setText("0");
+        netIncomeC.setToolTipText("");
+        jPanel1.add(netIncomeC, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, 20, -1));
+
+        projectManagerFaults11.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        projectManagerFaults11.setForeground(new java.awt.Color(0, 0, 0));
+        projectManagerFaults11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        projectManagerFaults11.setText("0");
+        projectManagerFaults11.setToolTipText("");
+        jPanel1.add(projectManagerFaults11, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 560, 20, -1));
+
+        projectManagerFaults12.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        projectManagerFaults12.setForeground(new java.awt.Color(0, 0, 0));
+        projectManagerFaults12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        projectManagerFaults12.setText("0");
+        projectManagerFaults12.setToolTipText("");
+        jPanel1.add(projectManagerFaults12, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 600, 20, -1));
+
+        projectManagerFaults13.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        projectManagerFaults13.setForeground(new java.awt.Color(0, 0, 0));
+        projectManagerFaults13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        projectManagerFaults13.setText("0");
+        projectManagerFaults13.setToolTipText("");
+        jPanel1.add(projectManagerFaults13, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 630, 20, -1));
+
+        projectManagerFaults14.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        projectManagerFaults14.setForeground(new java.awt.Color(0, 0, 0));
+        projectManagerFaults14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        projectManagerFaults14.setText("0");
+        projectManagerFaults14.setToolTipText("");
+        jPanel1.add(projectManagerFaults14, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 590, 20, -1));
+
+        jTabbedPane1.addTab("Apple", jPanel1);
 
         jPanel2.setBackground(new java.awt.Color(153, 153, 255));
 
@@ -503,6 +793,38 @@ public class Vista extends javax.swing.JFrame {
         readyStandardStar.setText("0");
         readyStandardStar.setToolTipText("");
 
+        animationAvailability.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        animationAvailability.setForeground(new java.awt.Color(255, 255, 255));
+        animationAvailability.setText("0");
+
+        stageAvailability.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        stageAvailability.setForeground(new java.awt.Color(255, 255, 255));
+        stageAvailability.setText("0");
+
+        scriptAvailability.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        scriptAvailability.setForeground(new java.awt.Color(255, 255, 255));
+        scriptAvailability.setText("0");
+
+        plotTwistAvailability.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        plotTwistAvailability.setForeground(new java.awt.Color(255, 255, 255));
+        plotTwistAvailability.setText("0");
+
+        dubbingAvailability.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        dubbingAvailability.setForeground(new java.awt.Color(255, 255, 255));
+        dubbingAvailability.setText("0");
+
+        netIncome.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        netIncome.setForeground(new java.awt.Color(255, 255, 255));
+        netIncome.setText("0");
+
+        revenue.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        revenue.setForeground(new java.awt.Color(255, 255, 255));
+        revenue.setText("0");
+
+        costs.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        costs.setForeground(new java.awt.Color(255, 255, 255));
+        costs.setText("0");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -522,8 +844,6 @@ public class Vista extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel13)
-                    .addComponent(jLabel14)
-                    .addComponent(jLabel15)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel49)
                         .addGap(18, 18, 18)
@@ -532,12 +852,10 @@ public class Vista extends javax.swing.JFrame {
                         .addContainerGap()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel40)
-                            .addComponent(jLabel50)
-                            .addComponent(jLabel44)))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel45)
-                        .addGap(34, 34, 34)
-                        .addComponent(projectManagerStatusStar, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel44)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(revenue)
+                                .addComponent(jLabel50))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
@@ -553,39 +871,66 @@ public class Vista extends javax.swing.JFrame {
                                 .addComponent(deadlineCounterStar))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
-                                .addComponent(readyStandardStar)))))
+                                .addComponent(readyStandardStar))))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel45)
+                        .addGap(34, 34, 34)
+                        .addComponent(projectManagerStatusStar, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel15)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(netIncome))
+                            .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addGap(18, 18, 18)
+                        .addComponent(costs)))
                 .addGap(296, 296, 296)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel20)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(animationLabel3)
-                            .addComponent(stageLabel2)
-                            .addComponent(scriptLabel3)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(stageLabel2)
+                                .addGap(26, 26, 26)
+                                .addComponent(stageAvailability))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(scriptLabel3)
+                                .addGap(18, 18, 18)
+                                .addComponent(scriptAvailability))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(stageLabel3)
                                 .addGap(51, 51, 51)
                                 .addComponent(jLabel28))
                             .addComponent(animationLabel2))
-                        .addGap(11, 11, 11)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(45, 45, 45)
-                                .addComponent(plotTwistDriveLabel3))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(dubbingLabel3)
-                                .addGap(18, 18, 18))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(plotTwistDriveLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel30)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                                .addGap(8, 8, 8)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addGap(45, 45, 45)
+                                        .addComponent(plotTwistDriveLabel3))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                        .addComponent(dubbingLabel3)
+                                        .addGap(18, 18, 18))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                        .addComponent(plotTwistDriveLabel2)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jLabel30)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addGap(76, 76, 76)
+                                        .addComponent(dubbingLabel2)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jLabel26))
+                                    .addComponent(jLabel29))
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(plotTwistAvailability)
+                                    .addComponent(dubbingAvailability)))
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(76, 76, 76)
-                                .addComponent(dubbingLabel2)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel26))
-                            .addComponent(jLabel29)))
+                                .addGap(30, 30, 30)
+                                .addComponent(animationAvailability))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(scriptLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -617,29 +962,42 @@ public class Vista extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(scriptLabel3)
-                            .addComponent(plotTwistDriveLabel3))
+                            .addComponent(plotTwistDriveLabel3)
+                            .addComponent(scriptAvailability)
+                            .addComponent(dubbingAvailability))
                         .addGap(18, 18, 18)
-                        .addComponent(stageLabel2)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(stageLabel2)
+                            .addComponent(stageAvailability))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel49)
-                            .addComponent(animationLabel3)))
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(animationLabel3)
+                                .addComponent(animationAvailability))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel50)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel13)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel13)
+                            .addComponent(revenue))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel14)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel14)
+                            .addComponent(costs))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel15)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel15)
+                            .addComponent(netIncome))
                         .addGap(42, 42, 42)
                         .addComponent(jLabel44)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel45)
                             .addComponent(dubbingLabel3)
-                            .addComponent(projectManagerStatusStar))
+                            .addComponent(projectManagerStatusStar)
+                            .addComponent(plotTwistAvailability))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(directorStatusStar)))
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -687,184 +1045,6 @@ public class Vista extends javax.swing.JFrame {
         );
 
         jTabbedPane1.addTab("MSI", jPanel2);
-
-        jPanel1.setBackground(new java.awt.Color(153, 255, 153));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/apple-logo_1.png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
-
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel3.setText("#Faltas:");
-        jLabel3.setMaximumSize(new java.awt.Dimension(86, 36));
-        jLabel3.setMinimumSize(new java.awt.Dimension(86, 36));
-        jLabel3.setPreferredSize(new java.awt.Dimension(86, 36));
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 60, 140, 40));
-
-        jLabel4.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel4.setText("Dinero Descontado:");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 60, -1, -1));
-
-        jLabel5.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel5.setText("Datos Financieros");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, -1, -1));
-
-        jLabel6.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel6.setText("Ganancias en bruto:");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, -1, -1));
-
-        jLabel7.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel7.setText("Costos Operativos:");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, -1, -1));
-
-        jLabel8.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel8.setText("Utilidades:");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, -1, -1));
-
-        jLabel9.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel9.setText("Estado de actividad:");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, -1, -1));
-
-        jLabel10.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel10.setText("Project Manager:");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, -1, -1));
-
-        jLabel11.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel11.setText("Director:");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, -1, -1));
-
-        jLabel12.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel12.setText("Placas base:");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 390, -1, -1));
-
-        jLabel16.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel16.setText("CPU:");
-        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 430, -1, -1));
-
-        jLabel17.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel17.setText("Memoria RAM:");
-        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 470, -1, -1));
-
-        jLabel18.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel18.setText("Disponibilidad actual en el almacen");
-        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 340, -1, -1));
-
-        jLabel19.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel19.setText("Fuentes de alimentacion:");
-        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 390, -1, -1));
-
-        jLabel22.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel22.setText("Tarjetas Graficas:");
-        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 450, -1, -1));
-
-        jLabel23.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel23.setText("Computadores Listos");
-        jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 520, -1, -1));
-
-        jLabel24.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel24.setText("Tarjeta Grafica:");
-        jPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 580, -1, -1));
-
-        jLabel25.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel25.setText("Dias restantes para la entrega:");
-        jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 620, -1, -1));
-
-        jLabel31.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel31.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel31.setText("Estandar:");
-        jPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 580, -1, -1));
-
-        jLabel32.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel32.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel32.setText("Placas Base:");
-        jPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 560, -1, -1));
-
-        jLabel33.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel33.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel33.setText("CPU:");
-        jPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 600, -1, -1));
-
-        jLabel34.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel34.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel34.setText("Memoria RAM:");
-        jPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 630, -1, -1));
-
-        jLabel35.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
-        jLabel35.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel35.setText("Disponibilidad maxima en el almacen");
-        jPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 510, -1, -1));
-
-        jLabel36.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel36.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel36.setText("Fuentes de alimentacion:");
-        jPanel1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 550, -1, -1));
-
-        jLabel37.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
-        jLabel37.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel37.setText("Tarjetas Graficas:");
-        jPanel1.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 590, -1, -1));
-
-        directorStatus.setBackground(new java.awt.Color(0, 0, 0));
-        directorStatus.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        directorStatus.setForeground(new java.awt.Color(0, 0, 0));
-        directorStatus.setText("Trabajando");
-        jPanel1.add(directorStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 490, -1, -1));
-
-        projectManagerStatus1.setBackground(new java.awt.Color(0, 0, 0));
-        projectManagerStatus1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        projectManagerStatus1.setForeground(new java.awt.Color(0, 0, 0));
-        projectManagerStatus1.setText("Trabajando");
-        jPanel1.add(projectManagerStatus1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 460, -1, -1));
-
-        projectManagerFaults.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        projectManagerFaults.setForeground(new java.awt.Color(0, 0, 0));
-        projectManagerFaults.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        projectManagerFaults.setText("0");
-        projectManagerFaults.setToolTipText("");
-        jPanel1.add(projectManagerFaults, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 70, 90, -1));
-
-        projectManagerDeduction.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        projectManagerDeduction.setForeground(new java.awt.Color(0, 0, 0));
-        projectManagerDeduction.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        projectManagerDeduction.setText("0");
-        jPanel1.add(projectManagerDeduction, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 70, 210, -1));
-
-        deadlineCounter.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        deadlineCounter.setForeground(new java.awt.Color(0, 0, 0));
-        deadlineCounter.setText("0");
-        jPanel1.add(deadlineCounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 620, -1, -1));
-
-        readyPlotTwist1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        readyPlotTwist1.setForeground(new java.awt.Color(0, 0, 0));
-        readyPlotTwist1.setText("0");
-        jPanel1.add(readyPlotTwist1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 580, -1, -1));
-
-        readyStandard.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        readyStandard.setForeground(new java.awt.Color(0, 0, 0));
-        readyStandard.setText("0");
-        jPanel1.add(readyStandard, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 580, -1, -1));
-
-        jTabbedPane1.addTab("Apple", jPanel1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1009,10 +1189,14 @@ public class Vista extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel animationAvailability;
+    private javax.swing.JLabel animationAvailabilityC;
     private javax.swing.JLabel animationLabel2;
     private javax.swing.JLabel animationLabel3;
     private javax.swing.JTextField assemblers;
     private javax.swing.JTextField assemblers1;
+    private javax.swing.JLabel costs;
+    private javax.swing.JLabel costsC;
     private javax.swing.JTextField cpu;
     private javax.swing.JTextField cpu1;
     private javax.swing.JTextField deadline;
@@ -1021,6 +1205,8 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JLabel deadlineCounterStar;
     private javax.swing.JLabel directorStatus;
     private javax.swing.JLabel directorStatusStar;
+    private javax.swing.JLabel dubbingAvailability;
+    private javax.swing.JLabel dubbingAvailabilityC;
     private javax.swing.JLabel dubbingLabel2;
     private javax.swing.JLabel dubbingLabel3;
     private javax.swing.JTextField graphicscard;
@@ -1104,6 +1290,10 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField motherboards;
     private javax.swing.JTextField motherboards1;
+    private javax.swing.JLabel netIncome;
+    private javax.swing.JLabel netIncomeC;
+    private javax.swing.JLabel plotTwistAvailability;
+    private javax.swing.JLabel plotTwistAvailabilityC;
     private javax.swing.JLabel plotTwistDriveLabel2;
     private javax.swing.JLabel plotTwistDriveLabel3;
     private javax.swing.JTextField powersupply;
@@ -1111,6 +1301,11 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JLabel projectManagerDeduction;
     private javax.swing.JLabel projectManagerDeductionStar;
     private javax.swing.JLabel projectManagerFaults;
+    private javax.swing.JLabel projectManagerFaults11;
+    private javax.swing.JLabel projectManagerFaults12;
+    private javax.swing.JLabel projectManagerFaults13;
+    private javax.swing.JLabel projectManagerFaults14;
+    private javax.swing.JLabel projectManagerFaults4;
     private javax.swing.JLabel projectManagerFaultsStar;
     private javax.swing.JLabel projectManagerStatus1;
     private javax.swing.JLabel projectManagerStatusStar;
@@ -1120,10 +1315,16 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JLabel readyPlotTwistStar;
     private javax.swing.JLabel readyStandard;
     private javax.swing.JLabel readyStandardStar;
+    private javax.swing.JLabel revenue;
+    private javax.swing.JLabel revenueC;
+    private javax.swing.JLabel scriptAvailability;
+    private javax.swing.JLabel scriptAvailabilityC;
     private javax.swing.JLabel scriptLabel2;
     private javax.swing.JLabel scriptLabel3;
     private javax.swing.JTextField simulationDuration;
     private javax.swing.JTextField simulationDuration1;
+    private javax.swing.JLabel stageAvailability;
+    private javax.swing.JLabel stageAvailabilityC;
     private javax.swing.JLabel stageLabel2;
     private javax.swing.JLabel stageLabel3;
     // End of variables declaration//GEN-END:variables
@@ -1369,11 +1570,11 @@ public class Vista extends javax.swing.JFrame {
     }
 
     public JTextField getScreenwriters() {
-        return screenwriters;
+        return scriptAvailability;
     }
 
     public void setScreenwriters(JTextField screenwriters) {
-        this.screenwriters = screenwriters;
+        this.scriptAvailability = screenwriters;
     }
 
     public JLabel getScriptAvailability() {
