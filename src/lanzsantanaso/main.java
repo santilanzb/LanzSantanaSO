@@ -7,6 +7,7 @@ package lanzsantanaso;
 import Interfaz.Vista;
 import Objetos. *;
 import DataManagement.CsvManager;
+import Objetos.assemblerTeam. *;
 
 /**
  *
@@ -113,12 +114,12 @@ public class main {
             // READY
             // APPLE
             gui.getReadyPlotTwist()
-                    .setText(String.valueOf(Apple.getPlotAssemblerStorage().getResourse()));
+                    .setText(String.valueOf(Apple.getGcAssemblerStorage().getResourse())); 
             gui.getReadyStandard()
                     .setText(String.valueOf(Apple.getAssemblerStorage().getResourse()));
             // MSI
             gui.getReadyPlotTwistStar()
-                    .setText(String.valueOf(MSI.getPlotAssemblerStorage().getResourse()));
+                    .setText(String.valueOf(MSI.getGcAssemblerStorage().getResourse()));
             gui.getReadyStandardStar()
                     .setText(String.valueOf(MSI.getAssemblerStorage().getResourse()));
 

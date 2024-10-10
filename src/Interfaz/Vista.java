@@ -16,6 +16,9 @@ import static lanzsantanaso.main.csvManager;
  */
 public class Vista extends javax.swing.JFrame {
 
+    private javax.swing.JLabel validator;
+    private JTextField screenwriters;
+    private JLabel readyPlotTwist;
     /**
      * Creates new form Vista
      */
@@ -25,6 +28,7 @@ public class Vista extends javax.swing.JFrame {
         
         enterConfigData();
         enterConfigData1();
+        
     }
     
     // loads initial configuration data brought from a csv document
@@ -1153,6 +1157,17 @@ public class Vista extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_assemblers1ActionPerformed
 
+    public static boolean numValidator(JTextField strNum) {
+        if (strNum == null) {
+            return false;
+        }
+        try {
+            Integer i = Integer.valueOf(strNum.getText());
+        } catch (NumberFormatException nfe) {
+            return false;
+        }
+        return true;
+    }
     /**
      * @param args the command line arguments
      */
@@ -1345,12 +1360,12 @@ public class Vista extends javax.swing.JFrame {
         this.animationAvailabilityC = animationAvailabilityC;
     }
 
-    public JTextField getAnimator() {
-        return animator;
+    public JTextField getRam() {
+        return ram;
     }
 
-    public void setAnimator(JTextField animator) {
-        this.animator = animator;
+    public void setRam(JTextField ram) {
+        this.ram = ram;
     }
 
     public JTextField getAssemblers() {
@@ -1465,12 +1480,12 @@ public class Vista extends javax.swing.JFrame {
         this.plotTwistAvailabilityC = plotTwistAvailabilityC;
     }
 
-    public JTextField getPlotTwistScriptwriters() {
-        return plotTwistScriptwriters;
+    public JTextField getGraphicscard() {
+        return graphicscard;
     }
 
-    public void setPlotTwistScriptwriters(JTextField plotTwistScriptwriters) {
-        this.plotTwistScriptwriters = plotTwistScriptwriters;
+    public void setGraphicscard(JTextField graphicscard) {
+        this.graphicscard = graphicscard;
     }
 
     public JLabel getProjectManagerDeduction() {
@@ -1522,6 +1537,7 @@ public class Vista extends javax.swing.JFrame {
     }
 
     public JLabel getReadyPlotTwist() {
+        JLabel readyPlotTwist = null;
         return readyPlotTwist;
     }
 
@@ -1569,12 +1585,13 @@ public class Vista extends javax.swing.JFrame {
         this.revenueC = revenueC;
     }
 
-    public JTextField getScreenwriters() {
-        return scriptAvailability;
+   public JTextField getScreenwriters() {
+        JTextField screenwriters = null;
+        return screenwriters;
     }
 
     public void setScreenwriters(JTextField screenwriters) {
-        this.scriptAvailability = screenwriters;
+        this.screenwriters = screenwriters;
     }
 
     public JLabel getScriptAvailability() {
@@ -1617,20 +1634,20 @@ public class Vista extends javax.swing.JFrame {
         this.stageAvailabilityC = stageAvailabilityC;
     }
 
-    public JTextField getStageDesigner() {
-        return stageDesigner;
+    public JTextField getCpu() {
+        return cpu;
     }
 
-    public void setStageDesigner(JTextField stageDesigner) {
-        this.stageDesigner = stageDesigner;
+    public void setCpu(JTextField cpu) {
+        this.cpu = cpu;
     }
 
-    public JTextField getVoiceActors() {
-        return voiceActors;
+    public JTextField getPowersupply() {
+        return powersupply;
     }
 
-    public void setVoiceActors(JTextField voiceActors) {
-        this.voiceActors = voiceActors;
+    public void setPowersupply(JTextField powersupply) {
+        this.powersupply = powersupply;
     }
 
 
