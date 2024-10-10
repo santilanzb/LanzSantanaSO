@@ -35,7 +35,7 @@ public class ListaDoble implements ILista {
     }
 
     @Override
-    public void insertBegin(Data element) {
+    public void insertBegin(SimulationData element) {
         NodoDoble node = new NodoDoble(element);
         if (isEmpty()) {
             setHead(node);
@@ -49,7 +49,7 @@ public class ListaDoble implements ILista {
     }
 
     @Override
-    public void insertFinal(Data element) {
+    public void insertFinal(SimulationData element) {
         NodoDoble node = new NodoDoble(element);
         if (isEmpty()) {
             setHead(node);
@@ -64,7 +64,7 @@ public class ListaDoble implements ILista {
     }
 
     @Override
-    public void insertInIndex(Data element, int index) {
+    public void insertInIndex(SimulationData element, int index) {
 
     }
 

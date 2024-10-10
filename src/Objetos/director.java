@@ -79,7 +79,7 @@ public class director extends Thread {
                     setCheckingPM(false);
 
                     // PRUEBAAAA
-                    if (company == main.Msi) {
+                    if (company == main.MSI) {
                         main.gui.getDirectorStatus().setText("Administrando");
                     } else {
                         main.gui.getDirectorStatusStar().setText("Administrando");
@@ -97,12 +97,12 @@ public class director extends Thread {
                 setCheckingPM(true);
 
                 // PRUEBAAAA
-                if (company == main.Msi) {
+                if (company == main.MSI) {
                     main.gui.getDirectorStatus().setText("Supervisando PM");
                 } else {
                     main.gui.getDirectorStatusStar().setText("Supervisando PM");
                 }
-
+                
                 try {
                     sleep(halfHour); // Checks the project manajer for 35 minutes
                     timeSpent += halfHour;
@@ -126,7 +126,7 @@ public class director extends Thread {
                     setCheckingPM(false);
 
                     // PRUEBAAAA
-                    if (company == main.Msi) {
+                    if (company == main.MSI) {
                         main.gui.getDirectorStatus().setText("Administrando");
                     } else {
                         main.gui.getDirectorStatusStar().setText("Administrando");

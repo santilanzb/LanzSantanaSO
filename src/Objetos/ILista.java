@@ -2,9 +2,9 @@ package Objetos;
 
 
 public interface ILista {
-    public void insertBegin(Data element);
-    public void insertFinal(Data element);
-    public void insertInIndex(Data element, int index);
+    public void insertBegin(SimulationData element);
+    public void insertFinal(SimulationData element);
+    public void insertInIndex(SimulationData element, int index);
     public NodoDoble deleteFinal();
     public NodoDoble deleteBegin();
     public NodoDoble deleteInIndex(int index);
