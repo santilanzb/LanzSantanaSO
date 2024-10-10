@@ -55,7 +55,6 @@ public class company extends Thread {
     private int motherboardReq;
     private int ramReq;
     private int powersupplyReq;
-    private int graphicscardReq;
     private int cpuReq;
     private int gcComputersRatio;
     private int graphicscardAmount;
@@ -78,7 +77,7 @@ public class company extends Thread {
     private proyectManager proyectManager;
     private assemblerTeam assemblerTeam;
    
-    public company(String companyName,int commonComputerProfit,int gcComputerProfit, int deadlineRatio, int dayDuration, int motherboardReq, int ramReq, int powersupplyReq, int graphicscardReq, int cpuReq, int gcComputersRatio, int graphicscardAmount, int motherboardEmployeeCount, int ramEmployeeCount, int powersupplyEmployeeCount, int graphicscardEmployeeCount, int cpuEmployeeCount, int assemblerEmployeeCount) {
+    public company(String companyName,int commonComputerProfit,int gcComputerProfit, int deadlineRatio, int dayDuration, int motherboardReq, int ramReq, int powersupplyReq, int cpuReq, int gcComputersRatio, int graphicscardAmount, int motherboardEmployeeCount, int ramEmployeeCount, int powersupplyEmployeeCount, int graphicscardEmployeeCount, int cpuEmployeeCount, int assemblerEmployeeCount) {
         //Id
         this.companyName = companyName;
         //Economics
@@ -117,7 +116,6 @@ public class company extends Thread {
         this.motherboardReq = motherboardReq;
         this.ramReq = ramReq;
         this.powersupplyReq = powersupplyReq;
-        this.graphicscardReq = graphicscardReq;
         this.cpuReq = cpuReq;
         this.gcComputersRatio = gcComputersRatio;
         this.graphicscardAmount = graphicscardAmount;
@@ -274,10 +272,6 @@ public class company extends Thread {
 
     public int getPowersupplyReq(){
         return powersupplyReq;
-    }
-    
-    public int getGraphicscardReq(){
-        return graphicscardReq;
     }
     
     public int getCpuReq(){
