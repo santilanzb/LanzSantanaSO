@@ -82,6 +82,7 @@ public class Vista extends javax.swing.JFrame {
         jLabel43 = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel4 = new javax.swing.JPanel();
+        jButton2 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel38 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
@@ -224,15 +225,28 @@ public class Vista extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jButton2.setText("HAZ CLICK PARA VER LA GRAFICS");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1050, Short.MAX_VALUE)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 752, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(210, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 672, Short.MAX_VALUE)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(74, 74, 74)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(282, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Grafica", jPanel4);
@@ -565,7 +579,7 @@ public class Vista extends javax.swing.JFrame {
         projectManagerFaults4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         projectManagerFaults4.setForeground(new java.awt.Color(0, 0, 0));
         projectManagerFaults4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        projectManagerFaults4.setText("0");
+        projectManagerFaults4.setText("35");
         projectManagerFaults4.setToolTipText("");
         jPanel1.add(projectManagerFaults4, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 550, 20, -1));
 
@@ -595,47 +609,47 @@ public class Vista extends javax.swing.JFrame {
         revenueC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         revenueC.setText("0");
         revenueC.setToolTipText("");
-        jPanel1.add(revenueC, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 20, -1));
+        jPanel1.add(revenueC, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 100, -1));
 
         costsC.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         costsC.setForeground(new java.awt.Color(0, 0, 0));
         costsC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         costsC.setText("0");
         costsC.setToolTipText("");
-        jPanel1.add(costsC, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 320, 20, -1));
+        jPanel1.add(costsC, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 320, 100, -1));
 
         netIncomeC.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         netIncomeC.setForeground(new java.awt.Color(0, 0, 0));
         netIncomeC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         netIncomeC.setText("0");
         netIncomeC.setToolTipText("");
-        jPanel1.add(netIncomeC, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, 20, -1));
+        jPanel1.add(netIncomeC, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, 120, -1));
 
         projectManagerFaults11.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         projectManagerFaults11.setForeground(new java.awt.Color(0, 0, 0));
         projectManagerFaults11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        projectManagerFaults11.setText("0");
+        projectManagerFaults11.setText("25");
         projectManagerFaults11.setToolTipText("");
         jPanel1.add(projectManagerFaults11, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 560, 20, -1));
 
         projectManagerFaults12.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         projectManagerFaults12.setForeground(new java.awt.Color(0, 0, 0));
         projectManagerFaults12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        projectManagerFaults12.setText("0");
+        projectManagerFaults12.setText("20");
         projectManagerFaults12.setToolTipText("");
         jPanel1.add(projectManagerFaults12, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 600, 20, -1));
 
         projectManagerFaults13.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         projectManagerFaults13.setForeground(new java.awt.Color(0, 0, 0));
         projectManagerFaults13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        projectManagerFaults13.setText("0");
+        projectManagerFaults13.setText("55");
         projectManagerFaults13.setToolTipText("");
         jPanel1.add(projectManagerFaults13, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 630, 20, -1));
 
         projectManagerFaults14.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         projectManagerFaults14.setForeground(new java.awt.Color(0, 0, 0));
         projectManagerFaults14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        projectManagerFaults14.setText("0");
+        projectManagerFaults14.setText("10");
         projectManagerFaults14.setToolTipText("");
         jPanel1.add(projectManagerFaults14, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 590, 20, -1));
 
@@ -846,50 +860,54 @@ public class Vista extends javax.swing.JFrame {
                 .addComponent(projectManagerDeductionStar, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel13)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel49)
-                        .addGap(18, 18, 18)
-                        .addComponent(directorStatusStar))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel40)
-                            .addComponent(jLabel44)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(revenue)
-                                .addComponent(jLabel50))))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel42)
-                                .addGap(32, 32, 32)
-                                .addComponent(readyPlotTwistStar)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel41))
-                            .addComponent(jLabel48))
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(27, 27, 27)
-                                .addComponent(deadlineCounterStar))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel49)
                                 .addGap(18, 18, 18)
-                                .addComponent(readyStandardStar))))
+                                .addComponent(directorStatusStar))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel40)
+                                    .addComponent(jLabel44)
+                                    .addComponent(jLabel50)))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+                                        .addComponent(jLabel42)
+                                        .addGap(32, 32, 32)
+                                        .addComponent(readyPlotTwistStar)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jLabel41))
+                                    .addComponent(jLabel48))
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addGap(27, 27, 27)
+                                        .addComponent(deadlineCounterStar))
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addGap(18, 18, 18)
+                                        .addComponent(readyStandardStar))))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel45)
+                                .addGap(34, 34, 34)
+                                .addComponent(projectManagerStatusStar, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+                                    .addComponent(jLabel14)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(costs, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+                                    .addComponent(jLabel13)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(revenue, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(296, 296, 296))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel45)
-                        .addGap(34, 34, 34)
-                        .addComponent(projectManagerStatusStar, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(netIncome))
-                            .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.LEADING))
-                        .addGap(18, 18, 18)
-                        .addComponent(costs)))
-                .addGap(296, 296, 296)
+                        .addComponent(jLabel15)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(netIncome, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(366, 366, 366)))
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel20)
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -1157,6 +1175,10 @@ public class Vista extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_assemblers1ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Chart chart = new Chart();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     public static boolean numValidator(JTextField strNum) {
         if (strNum == null) {
             return false;
@@ -1227,6 +1249,7 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JTextField graphicscard;
     private javax.swing.JTextField graphicscard1;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

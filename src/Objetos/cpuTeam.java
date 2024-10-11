@@ -13,9 +13,9 @@ import java.util.logging.Logger;
  *
  * @author Abraham Santana
  */
-public class cpuTeam extends Thread{
+public class cpuTeam extends Thread {
     
- private company company;
+    private company company;
     private int dayCicle;
     int salary = 26;
 
@@ -99,4 +99,3 @@ public class cpuTeam extends Thread{
         return company.getCpuSemaphore();
     }
 }
-
