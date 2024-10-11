@@ -66,7 +66,7 @@ public class ramTeam extends Thread {
         if (getDayCicle() >= 1) {
             try {
                 getRamSemaphore().acquire(); // wait
-                int addedAmount = getRamStorage().add(getEmployeeCount()); // Adds 1 script for each employee in the
+                int addedAmount = getRamStorage().add(getEmployeeCount() * 3); // Adds 3 for each employee in the
                                                                               // team the function .add() in drive class
                                                                               // returns the added amount to be reported
                                                                               // later

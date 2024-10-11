@@ -63,10 +63,10 @@ public class graphicscardTeam extends Thread {
 
     public void operate() {
         setDayCicle(getDayCicle() + 1);
-        if (getDayCicle() >= 2) {
+        if (getDayCicle() >= 3) {
             try {
                 getGraphicscardSemaphore().acquire(); // wait
-                int addedAmount = getGraphicscardStorage().add(getEmployeeCount()); // Adds 1 script for each employee in
+                int addedAmount = getGraphicscardStorage().add(getEmployeeCount()); // Adds 1 for each employee in
                                                                                  // the team the function .add() in
                                                                                  // storage class returns the added amount
                                                                                  // to be reported later

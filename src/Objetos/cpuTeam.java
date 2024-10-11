@@ -60,7 +60,7 @@ public class cpuTeam extends Thread{
 
     public void operate() {
         setDayCicle(getDayCicle() + 1);
-        if (getDayCicle() >= 4) {
+        if (getDayCicle() >= 2) {
             try {
                 getCpuSemaphore().acquire(); // wait
                 int addedAmount = getCpuStorage().add(getEmployeeCount()); // Adds 1 script for each employee in

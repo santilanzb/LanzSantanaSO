@@ -63,7 +63,7 @@ public class motherboardTeam extends Thread {
 
     public void operate() {
         setDayCicle(getDayCicle() + 1);
-        if (getDayCicle() >= 4) {
+        if (getDayCicle() >= 2) {
             try {
 
                 getMotherboardSemaphore().acquire(); // wait

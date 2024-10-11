@@ -67,7 +67,7 @@ public class powersupplyTeam extends Thread {
         if (getDayCicle() >= 1) {
             try {
                 getPowersupplySemaphore().acquire(); // wait
-                int addedAmount = getPowersupplyStorage().add(getEmployeeCount() * 5); // Adds 5 voice translations for
+                int addedAmount = getPowersupplyStorage().add(getEmployeeCount() * 3); // Adds 3  for
                                                                                     // each employee in the team the
                                                                                     // function .add() in drive class
                                                                                     // returns the added amount to be
